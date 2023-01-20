@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/themes/solarized.yml
+  - ~/.config/alacritty/colors/solarized.yml
 
 font:
   size: 11.5
@@ -13,6 +13,6 @@ font:
     style: SemiBold
   offset:
     # change the spacing between letters
-    x: .5
+    x: 0
     # change the spacing between lines
     y: 1
