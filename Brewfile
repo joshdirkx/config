@@ -8,6 +8,8 @@ brew "elasticsearch"
 brew "npm"
 brew "alacritty"
 brew "asciinema"
+brew "imagemagick"
+brew "gifsicle"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"

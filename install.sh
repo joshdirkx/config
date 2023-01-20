@@ -14,3 +14,7 @@ gh auth login
 
 echo "Running brew bundle"
 brew bundle --file="./Brewfile"
+
+echo "Installing asciicast2gif"
+npm install --global asciicast2gif
+
