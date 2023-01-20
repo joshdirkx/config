@@ -81,6 +81,9 @@ require('packer').startup(function(use)
   -- solarized colorscheme
   use { 'ishan9299/nvim-solarized-lua' }
 
+  -- better bufferline
+  use { 'akinsho/nvim-bufferline.lua' }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -342,6 +345,38 @@ require('nvim-treesitter.configs').setup {
 
 -- [[ Configure nvim-autopairs ]]
 require('nvim-autopairs').setup()
+
+-- [[ Configure nvim-bufferline ]]
+require ('bufferline').setup({
+  options = {
+    mode = "tabs",
+    separator_style = 'slant',
+    always_show_bufferline = false,
+    show_buffer_close_icons = false,
+    show_close_icon = false,
+    color_icons = true
+  },
+  highlights = {
+    separator = {
+      fg = '#073642',
+      bg = '#002b36',
+    },
+    separator_selected = {
+      fg = '#073642',
+    },
+    background = {
+      fg = '#657b83',
+      bg = '#002b36'
+    },
+    buffer_selected = {
+      fg = '#fdf6e3',
+      bold = true,
+    },
+    fill = {
+      bg = '#073642'
+    }
+  },
+})
 
 -- Terraform lsp
 require'lspconfig'.terraformls.setup{}
