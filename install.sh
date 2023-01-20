@@ -15,3 +15,5 @@ gh auth login
 echo "Running brew bundle"
 brew bundle --file="./Brewfile"
 
+echo "Creating ~/.tmux.conf"
+ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
