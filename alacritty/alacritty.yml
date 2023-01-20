@@ -1,0 +1,18 @@
+import:
+  - ~/.config/alacritty/themes/solarized.yml
+
+font:
+  size: 11.5
+  normal:
+    family: Fira Code
+  italic:
+    family: Fira Code
+    style: Italic
+  bold:
+    family: Fira Code
+    style: SemiBold
+  offset:
+    # change the spacing between letters
+    x: .5
+    # change the spacing between lines
+    y: 1
