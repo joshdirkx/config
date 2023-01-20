@@ -124,7 +124,6 @@ vim.api.nvim_set_keymap('i', 'jj', '<esc>', { noremap = true, silent = true })
 -- removes <esc> keybinding
 vim.api.nvim_set_keymap('i', '<esc>', '<Nop>', { noremap = true, silent = true })
 
-
 -- navigate splits with ctrl + hjkl
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true })
@@ -136,8 +135,6 @@ vim.o.hlsearch = false
 
 -- current line number
 vim.wo.number = true
--- numbers are relative to current line
-vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
