@@ -7,6 +7,7 @@ brew "postgresql"
 brew "elasticsearch"
 brew "npm"
 brew "alacritty"
+brew "asciinema"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
