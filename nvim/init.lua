@@ -84,6 +84,9 @@ require('packer').startup(function(use)
   -- better bufferline
   use { 'akinsho/nvim-bufferline.lua' }
 
+  -- toggle relativenumber automatically
+  use { 'joshdirkx/toggle-relativenumber.nvim' }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -351,7 +354,7 @@ require('nvim-treesitter.configs').setup {
 require('nvim-autopairs').setup()
 
 -- [[ Configure nvim-bufferline ]]
-require ('bufferline').setup({
+require('bufferline').setup({
   options = {
     mode = 'tabs',
     separator_style = 'slant',
@@ -384,6 +387,9 @@ require ('bufferline').setup({
 
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
+
+-- toggle relativenumber
+require('toggle-relativenumber').setup({})
 
 -- Terraform lsp
 require'lspconfig'.terraformls.setup{}
