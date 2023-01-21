@@ -10,6 +10,7 @@ brew "alacritty"
 brew "asciinema"
 brew "imagemagick"
 brew "gifsicle"
+brew "cdk8s"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
