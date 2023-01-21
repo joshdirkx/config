@@ -11,6 +11,8 @@ brew "asciinema"
 brew "imagemagick"
 brew "gifsicle"
 brew "cdk8s"
+brew "kubectl"
+brew "docker"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
