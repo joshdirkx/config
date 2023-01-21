@@ -13,6 +13,7 @@ brew "gifsicle"
 brew "cdk8s"
 brew "kubectl"
 brew "docker"
+brew "tree"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code"
