@@ -13,7 +13,7 @@
 [interact]
   diffFilter = delta --color-only
 [delta]
-  # navigate with n/N
+  side-by-side = true
   navigate = true
   light = false
 [merge]
