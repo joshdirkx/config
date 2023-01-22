@@ -6,3 +6,5 @@ if status is-interactive
 end
 
 starship init fish | source
+
+set fzf_preview_dir_cmd exa --all --color=always
