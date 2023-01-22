@@ -87,6 +87,9 @@ require('packer').startup(function(use)
   -- toggle relativenumber automatically
   use { 'joshdirkx/toggle-relativenumber.nvim' }
 
+  -- fish shell syntax
+  use { 'nickeb96/fish.vim' }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
