@@ -1,0 +1,22 @@
+[init]
+  defaultBranch = main
+[user]
+  email = joshdirkx@gmail.com
+  name = Josh Dirkx
+  username = joshdirkx
+[github]
+  user = joshdirkx
+[core]
+  excludesfile = ~/.config/gitignore
+  editor = nvim
+  pager = delta
+[interact]
+  diffFilter = delta --color-only
+[delta]
+  # navigate with n/N
+  navigate = true
+  light = false
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default

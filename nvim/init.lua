@@ -474,7 +474,7 @@ local servers = {
   -- golang
   gopls = {},
   -- pyright = {},
-  -- rust_analyzer = {},
+  rust_analyzer = {},
   -- typescript
   tsserver = {},
 
