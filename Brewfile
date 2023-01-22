@@ -18,6 +18,7 @@ brew "fish"
 brew "starship"
 brew "exa"
 brew "git-delta"
+brew "fd"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"

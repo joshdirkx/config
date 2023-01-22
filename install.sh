@@ -27,3 +27,10 @@ set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 echo "Installing Oh My Fish"
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
+echo "Installing fisher"
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+echo "Installing fish plugins"
+fisher install PatrickF1/fzf.fish
+fisher install jorgebucaran/autopair.fish
+
