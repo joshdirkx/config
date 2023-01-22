@@ -17,6 +17,7 @@ brew "tree"
 brew "ripgrep"
 brew "fish"
 brew "starship"
+brew "exa"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
