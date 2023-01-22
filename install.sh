@@ -33,4 +33,5 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 echo "Installing fish plugins"
 fisher install PatrickF1/fzf.fish
 fisher install jorgebucaran/autopair.fish
+fisher install joseluisq/gitnow@2.10.0
 
