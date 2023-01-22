@@ -14,8 +14,11 @@ brew "cdk8s"
 brew "kubectl"
 brew "docker"
 brew "tree"
+brew "ripgrep"
+brew "fish"
+brew "starship"
 
 tap "homebrew/cask-fonts"
-cask "font-fira-code"
+cask "font-fira-code-nerd-font"
 
 cask "slack"

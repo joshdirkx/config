@@ -21,3 +21,9 @@ npm install --global asciicast2gif
 echo "Installing editorconfig"
 ln -sf ~/.config/editorconfig ~/.editorconfig
 
+echo "Adding brew to $PATH"
+set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+
+echo "Installing Oh My Fish"
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
