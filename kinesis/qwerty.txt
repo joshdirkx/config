@@ -1,0 +1,11 @@
+# rebind caps lock to escape
+
+[caps]>[escape]
+
+# remap up to down and down to up to match j/k
+# i also physically relocated the keys on my keyboard
+
+[up]>[down]
+[down]>[up]
+[kp-up]>[kp-down]
+[kp-down]>[kp-up]
