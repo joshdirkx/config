@@ -60,14 +60,16 @@ require('packer').startup(function(use)
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
-  -- Nerdtree for file navigation
-  use { 'preservim/nerdtree' }
+  -- nvimtree for file navigation
+  use { 'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    },
+    tag = 'nightly',
+  }
 
   -- autocomplete brackets
   use { 'windwp/nvim-autopairs' }
-
-  -- use - to open file navigation
-  use { 'tpope/vim-vinegar' }
 
   -- terraform
   use { 'hashivim/vim-terraform' }
@@ -403,6 +405,9 @@ vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
 
 -- toggle relativenumber
 require('toggle-relativenumber').setup({})
+
+-- nvimtree
+require('nvim-tree').setup({})
 
 -- Terraform lsp
 require'lspconfig'.terraformls.setup{}
