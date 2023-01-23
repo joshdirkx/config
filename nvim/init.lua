@@ -92,6 +92,9 @@ require('packer').startup(function(use)
   -- fish shell syntax
   use { 'nickeb96/fish.vim' }
 
+  -- easymotion but more better
+  use { 'phaazon/hop.nvim', branch = 'v2' }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -127,7 +130,7 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- - to toggle file navigation
-vim.api.nvim_set_keymap('n', '-', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '-', '<Cmd>NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 -- no arrow keys
 vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
@@ -410,6 +413,10 @@ require('toggle-relativenumber').setup({})
 
 -- nvimtree
 require('nvim-tree').setup({})
+
+-- hop.nvim
+require('hop').setup({})
+vim.keymap.set('n', '<leader><leader>w', '<Cmd>HopWord<CR>', {})
 
 -- Terraform lsp
 require'lspconfig'.terraformls.setup{}
