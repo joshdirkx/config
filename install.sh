@@ -38,3 +38,6 @@ fisher install joseluisq/gitnow@2.10.0
 echo "Saving passphrase for ssh"
 ssh-add --apple-use-keychain ~/.ssh/id_rsa
 
+echo "Installing Rust"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
