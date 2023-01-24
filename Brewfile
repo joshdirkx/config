@@ -26,3 +26,4 @@ tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
 
 cask "slack"
+cask "keycastr"

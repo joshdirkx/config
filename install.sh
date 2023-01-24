@@ -43,3 +43,6 @@ ssh-add --apple-use-keychain ~/.ssh/id_rsa
 echo "Installing Rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+echo "Adding keycastr toggle as cmd shift c"
+defaults write io.github.keycastr capturingHotKey '<00001200 08000000>'
+
