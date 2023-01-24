@@ -417,6 +417,19 @@ require('nvim-tree').setup({})
 -- hop.nvim
 require('hop').setup({})
 vim.keymap.set('n', '<leader><leader>w', '<Cmd>HopWord<CR>', {})
+vim.keymap.set('n', '<leader><leader>bw', '<Cmd>HopWordBC<CR>', {})
+vim.keymap.set('n', '<leader><leader>aw', '<Cmd>HopWordAC<CR>', {})
+vim.keymap.set('n', '<leader><leader>c', '<Cmd>HopChar1<CR>', {})
+vim.keymap.set('n', '<leader><leader>bc', '<Cmd>HopChar1BC<CR>', {})
+vim.keymap.set('n', '<leader><leader>ac', '<Cmd>HopChar1AC<CR>', {})
+vim.keymap.set('n', '<leader><leader>cc', '<Cmd>HopChar2<CR>', {})
+vim.keymap.set('n', '<leader><leader>bcc', '<Cmd>HopChar2BC<CR>', {})
+vim.keymap.set('n', '<leader><leader>acc', '<Cmd>HopChar2AC<CR>', {})
+vim.keymap.set('n', '<leader><leader>l', '<Cmd>HopLine<CR>', {})
+vim.keymap.set('n', '<leader><leader>ls', '<Cmd>HopLineStart<CR>', {})
+vim.keymap.set('n', '<leader><leader>v', '<Cmd>HopVertical<CR>', {})
+vim.keymap.set('n', '<leader><leader>bv', '<Cmd>HopVerticalBC<CR>', {})
+vim.keymap.set('n', '<leader><leader>av', '<Cmd>HopVerticalAC<CR>', {})
 
 -- Terraform lsp
 require'lspconfig'.terraformls.setup{}
