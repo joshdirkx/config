@@ -60,14 +60,6 @@ require('packer').startup(function(use)
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
-  -- nvimtree for file navigation
-  use { 'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons'
-    },
-    tag = 'nightly',
-  }
-
   -- autocomplete brackets
   use { 'windwp/nvim-autopairs' }
 
@@ -410,9 +402,6 @@ vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
 
 -- toggle relativenumber
 require('toggle-relativenumber').setup({})
-
--- nvimtree
-require('nvim-tree').setup({})
 
 -- hop.nvim
 require('hop').setup({})
