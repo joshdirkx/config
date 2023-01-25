@@ -21,6 +21,7 @@ brew "git-delta"
 brew "fd"
 brew "bat"
 brew "docker-compose"
+brew "pgcli"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
