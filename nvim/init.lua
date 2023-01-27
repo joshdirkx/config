@@ -87,6 +87,9 @@ require('packer').startup(function(use)
   -- easymotion but more better
   use { 'phaazon/hop.nvim', branch = 'v2' }
 
+  -- - for file navigation
+  use { 'tpope/vim-vinegar' }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -121,8 +124,8 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
--- - to toggle file navigation
-vim.api.nvim_set_keymap('n', '-', '<Cmd>NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true, silent = true })
 
 -- no arrow keys
 vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
