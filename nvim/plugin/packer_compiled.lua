@@ -99,10 +99,20 @@ _G.packer_plugins = {
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
+  ["fish.vim"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/fish.vim",
+    url = "https://github.com/nickeb96/fish.vim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/hop.nvim",
+    url = "https://github.com/phaazon/hop.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -113,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -129,6 +144,16 @@ _G.packer_plugins = {
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
+    url = "https://github.com/akinsho/nvim-bufferline.lua"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -138,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-solarized-lua"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/nvim-solarized-lua",
+    url = "https://github.com/ishan9299/nvim-solarized-lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -179,6 +209,11 @@ _G.packer_plugins = {
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggle-relativenumber.nvim"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/toggle-relativenumber.nvim",
+    url = "https://github.com/joshdirkx/toggle-relativenumber.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -193,6 +228,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
+  },
+  ["vim-terraform"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/vim-terraform",
+    url = "https://github.com/hashivim/vim-terraform"
+  },
+  ["vim-vinegar"] = {
+    loaded = true,
+    path = "/Users/jdirkx/.local/share/nvim/site/pack/packer/start/vim-vinegar",
+    url = "https://github.com/tpope/vim-vinegar"
   }
 }
 

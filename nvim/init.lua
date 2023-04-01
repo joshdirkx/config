@@ -404,7 +404,7 @@ vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
 
 -- toggle relativenumber
-require('toggle-relativenumber').setup({})
+require('toggle-relativenumber')
 
 -- hop.nvim
 require('hop').setup({})
@@ -508,7 +508,14 @@ local servers = {
   -- pyright = {},
   rust_analyzer = {},
   -- typescript
-  tsserver = {},
+  tsserver = {
+    capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
+    typescript = {
+      preferences = {
+        importModuleSpecifier = 'non-relative',
+      },
+    },
+  },
 
   sumneko_lua = {
     Lua = {
