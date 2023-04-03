@@ -10,4 +10,3 @@ end
 set PATH $HOME/.cargo/bin $PATH
 
 starship init fish | source
-
