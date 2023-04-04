@@ -90,6 +90,9 @@ require('packer').startup(function(use)
   -- - for file navigation
   use { 'tpope/vim-vinegar' }
 
+  -- git blame stuff
+  use { 'f-person/git-blame.nvim' }
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
