@@ -25,6 +25,8 @@ brew "pgcli"
 brew "curl"
 brew "coreutils"
 brew "asdf"
+brew "tig"
+brew "jq"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"

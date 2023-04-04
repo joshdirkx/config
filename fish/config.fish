@@ -11,5 +11,4 @@ set PATH $HOME/.cargo/bin $PATH
 
 starship init fish | source
 
-
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
