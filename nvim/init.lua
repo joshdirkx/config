@@ -499,7 +499,6 @@ end
 local servers = {
   -- sql
   sqlls = {},
-  sqls = {},
   -- ruby
   ruby_ls = {},
   -- terraform
@@ -520,9 +519,12 @@ local servers = {
     },
   },
 
-  sumneko_lua = {
+  lua_ls = {
     Lua = {
-      workspace = { checkThirdParty = false },
+      workspace = {
+        checkThirdParty = false,
+        library = vim.api.nvim_get_runtime_file('', true)
+      },
       telemetry = { enable = false },
     },
   },

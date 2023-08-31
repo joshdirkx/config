@@ -27,6 +27,7 @@ brew "coreutils"
 brew "asdf"
 brew "tig"
 brew "jq"
+brew "skaffold"
 
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
