@@ -37,6 +37,9 @@ fisher install joseluisq/gitnow@2.10.0
 fisher install meaningful-ooo/sponge
 fisher install acomagu/fish-async-prompt
 
+echo "Installing gitconfig settings"
+git config --global include.path "~/config/gitconfig"
+
 echo "Saving passphrase for ssh"
 ssh-add --apple-use-keychain ~/.ssh/id_rsa
 
