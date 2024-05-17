@@ -87,11 +87,14 @@ require('packer').startup(function(use)
   -- easymotion but more better
   use { 'phaazon/hop.nvim', branch = 'v2' }
 
-  -- - for file navigation
+  -- for file navigation
   use { 'tpope/vim-vinegar' }
 
   -- git blame stuff
   use { 'f-person/git-blame.nvim' }
+
+  -- file navigation
+  use { 'preservim/nerdtree' }
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
@@ -497,6 +500,8 @@ end
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
+  -- elixir
+  elixirls = {},
   -- sql
   sqlls = {},
   -- ruby
